@@ -1,0 +1,8 @@
+# parameters to configure the F310 joystick to control the jetracer
+# modification to this file for a new joystick will be reflected in the joy node that controls the jetracer
+#
+throttleAxis: 4     #axis which controls the throttle
+steerAxis: 0        #axis which controls the steering
+killSwitchButton: 1 #button which acts as a software e-stop
+resumeSwitch: 0     #button to release e-stop and resume action
+

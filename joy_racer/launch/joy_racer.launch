@@ -1,0 +1,18 @@
+<launch>
+	<group ns="racerParam">	
+	  <rosparam file="$(find jetracer)/config/racerParams.yaml" />
+	</group>
+
+        <group ns="joyParam">
+          <rosparam file="$(find joy_racer)/config/joyParams.yaml" />
+	</group>
+
+	<node respawn ="true" pkg ="joy"
+		type = "joy_node" name ="joy">
+		<param name ="dev" type = "string" value ="/dev/input/js0"/>
+	</node>
+
+        <node pkg="joy_racer" name="joy_racer" type="joy_racer" />
+
+
+</launch>
