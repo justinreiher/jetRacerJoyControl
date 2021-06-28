@@ -28,7 +28,7 @@ roslaunch joy_racer joy_racer.launch
 
 Example:
 ```
-export ROS_MASTER_URI=http://19.168.1.30:11311
+export ROS_MASTER_URI=http://192.168.1.30:11311
 export ROS_IP=192.168.1.31
 roslaunch joy_racer joy_racer.launch
 ```
