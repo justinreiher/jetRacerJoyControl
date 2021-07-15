@@ -57,7 +57,7 @@ int main(int argc, char** argv)
 
 
    ros::Subscriber joyNode = node.subscribe<sensor_msgs::Joy>("joy",100, joyCallback);   
-   joyController = node.advertise<jetracer::jetRacerCar>("/jetRacer_joyControl",100);
+   joyController = node.advertise<jetracer::jetRacerCar>("/jetRacer_Controller",100);
 
    node.getParam("/racerParam/throttleForwardMax",throttleMax);
    node.getParam("/racerParam/steerAngleMax",steerAngleMax);
