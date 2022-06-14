@@ -36,15 +36,13 @@ ssh jetson@137.82.226.150
 ```
 sudo systemctl stop rosservice.start
 ```
-*******************************************
+Otherwise
 ```
 export ROS_MASTER_URI=http://137.82.226.150:11311
 export ROS_IP=137.82.226.150
 roslaunch jetracer racer.launch
 ```
 *** Now the roscore is running with the IP address visible to the outside world ***
-
-
 
 The jetracer is configured to be running the ROS master node. In order to connect the joystick/gamepad to the jetracer in your bash terminal run the following commands:
 
