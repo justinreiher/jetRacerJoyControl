@@ -27,14 +27,19 @@ export ROS_IP=IP_ADDRESS_OF_JET_RACER
 roslaunch jetracer racer.launch
 
 Example:
+```
 ssh jetson@137.82.226.150
+```
 *** if the automatic service is running ***
+```
 sudo systemctl stop rosservice.start
+```
 *******************************************
+```
 export ROS_MASTER_URI=http://137.82.226.150:11311
 export ROS_IP=137.82.226.150
 roslaunch jetracer racer.launch
-
+```
 *** Now the roscore is running with the IP address visible to the outside world ***
 
 
@@ -45,8 +50,6 @@ The jetracer is configured to be running the ROS master node. In order to connec
 export ROS_MASTER_URI=http://IP_ADDRESS_OF_JET_RACER:11311
 export ROS_IP=IP_ADDRESS_OF_COMPUTER_CONNECTING_TO_JET_RACER
 roslaunch joy_racer joy_racer.launch
-
-
 
 ```
 
