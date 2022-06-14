@@ -36,7 +36,7 @@ ssh jetson@137.82.226.150
 ```
 sudo systemctl stop rosservice.start
 ```
-Otherwise
+The above will stop the ROS core and service running on the Jetson, Otherwise
 ```
 export ROS_MASTER_URI=http://137.82.226.150:11311
 export ROS_IP=137.82.226.150
